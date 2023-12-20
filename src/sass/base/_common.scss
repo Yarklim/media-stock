@@ -1,0 +1,27 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+html {
+  font-family: var(--ff-roboto);
+  font-size: var(--fs-base);
+
+  scroll-behavior: smooth;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.6rem;
+  color: var(--on-background);
+
+  background-color: var(--background);
+
+  transition: opacity var(--motion-duration-medium-2)
+    var(--motion-easing-linear);
+
+  //   opacity: 0;
+}

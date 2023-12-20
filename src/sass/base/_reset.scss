@@ -1,0 +1,49 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+span,
+img,
+input,
+button,
+video {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font: inherit;
+
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
