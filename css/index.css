@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 /* Reset styles */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import '~node_modules/modern-normalize/modern-normalize.css';
 *,
 *::before,
@@ -49,6 +49,103 @@ button {
   cursor: pointer;
 }
 
+.display-large {
+  font-size: var(--fs-display-large);
+  font-weight: var(--weight-regular);
+  line-height: 64px;
+}
+
+.display-medium {
+  font-size: var(--fs-display-medium);
+  font-weight: var(--weight-regular);
+  line-height: 52px;
+}
+
+.display-small {
+  font-size: var(--fs-display-small);
+  font-weight: var(--weight-regular);
+  line-height: 44px;
+}
+
+.headline-large {
+  font-size: var(--fs-headline-large);
+  font-weight: var(--weight-regular);
+  line-height: 40px;
+}
+
+.headline-medium {
+  font-size: var(--fs-headline-medium);
+  font-weight: var(--weight-regular);
+  line-height: 36px;
+}
+
+.headline-small {
+  font-size: var(--fs-headline-small);
+  font-weight: var(--weight-regular);
+  line-height: 32px;
+}
+
+.title-large {
+  font-size: var(--fs-title-large);
+  font-weight: var(--weight-regular);
+  line-height: 28px;
+}
+
+.title-medium {
+  font-size: var(--fs-title-medium);
+  font-weight: var(--weight-medium);
+  line-height: 24px;
+}
+
+.title-small {
+  font-size: var(--fs-title-small);
+  font-weight: var(--weight-medium);
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.label-large {
+  font-size: var(--fs-label-large);
+  font-weight: var(--weight-medium);
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.label-medium {
+  font-size: var(--fs-label-medium);
+  font-weight: var(--weight-medium);
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.label-small {
+  font-size: var(--fs-label-small);
+  font-weight: var(--weight-medium);
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.body-large {
+  font-size: var(--fs-body-large);
+  font-weight: var(--weight-regular);
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.body-medium {
+  font-size: var(--fs-body-medium);
+  font-weight: var(--weight-regular);
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.body-small {
+  font-size: var(--fs-body-small);
+  font-weight: var(--weight-regular);
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
 html {
   font-family: var(--ff-roboto);
   font-size: var(--fs-base);
@@ -70,6 +167,11 @@ body {
   background-color: var(--background);
   -webkit-transition: opacity var(--motion-duration-medium-2) var(--motion-easing-linear);
   transition: opacity var(--motion-duration-medium-2) var(--motion-easing-linear);
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.5;
 }
 
 :root {
