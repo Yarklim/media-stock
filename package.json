@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "media-stock",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Yarklim.github.io/organic-food",
+  "homepage": "https://Yarklim.github.io/media-stock",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /organic-food/"
+    "build": "parcel build src/*.html --public-url /media-stock/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yarklim/organic-food.git"
+    "url": "git+https://github.com/Yarklim/media-stock.git"
   },
   "keywords": [],
   "author": "yarklim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Yarklim/organic-food/issues"
+    "url": "https://github.com/Yarklim/media-stock/issues"
   },
   "dependencies": {
     "modern-normalize": "^2.0.0"
