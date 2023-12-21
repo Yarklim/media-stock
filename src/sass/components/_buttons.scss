@@ -31,3 +31,30 @@
     scale: 1;
   }
 }
+
+.btn-segment {
+  height: 40px;
+
+  padding-inline: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  color: var(--on-surface);
+  --state-layer-bg: var(--on-surface);
+}
+
+.btn-group .btn-segment:not(:last-child) {
+  border-inline-end: 1px solid var(--outline);
+}
+
+.btn-group {
+  display: flex;
+
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-full);
+
+  overflow: hidden;
+}
