@@ -1,0 +1,35 @@
+.top-app-bar {
+  height: var(--top-app-bar-height);
+
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+
+  padding-inline: 4px;
+
+  background-color: var(--surface);
+
+  transition: background-color var(--motion-duration-short-2)
+    var(--motion-easing-linear);
+
+  &.active {
+    background-color: var(--surface-container);
+  }
+
+  & .logo {
+    margin-inline: 4px auto;
+  }
+}
+
+[data-theme='dark'] .theme-btn .dark-icon,
+[data-theme='light'] .theme-btn .light-icon {
+  display: none;
+}
+
+.search-view-content .divider {
+  margin-inline: 16px;
+}

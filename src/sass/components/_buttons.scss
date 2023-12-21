@@ -1,0 +1,33 @@
+.icon-btn {
+  color: var(--on-surface-variant);
+  --state-layer-bg: var(--on-surface-variant);
+
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: var(--radius-circle);
+}
+
+.icon-btn > .state-layer {
+  inset: 4px;
+}
+
+.icon-btn > .ripple {
+  width: 40px;
+  height: 40px;
+
+  animation: icon-button-ripple 200ms var(--motion-easing-standard) forwards;
+}
+
+@keyframes icon-button-ripple {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
