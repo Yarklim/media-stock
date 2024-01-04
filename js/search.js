@@ -1,6 +1,7 @@
 import { ripple } from './ripple.js';
 import { addEventOnElements } from './event.js';
 import { getSegment } from './segment.js';
+import { updateUrl } from './updateUrl.js';
 
 // =============== Search view toggle in small devices ================
 const searchTogglers = document.querySelectorAll('[data-search-toggler]');
@@ -55,6 +56,8 @@ searchBtn.addEventListener('click', () => {
     updateUrl(window.filterObj, window.searchType);
   }
 });
+
+// ================ Submit search when press "Enter" ================== 1:52
 
 // ========================= Search history ===========================
 let searchHistory = { items: [] };
