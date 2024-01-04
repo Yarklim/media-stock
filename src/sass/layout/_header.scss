@@ -277,10 +277,6 @@
   height: 100%;
 }
 
-.input-wrapper:has(:placeholder-shown) + .icon-btn {
-  display: none;
-}
-
 .search-bar .search-btn {
   --state-layer-bg: var(--primary);
   color: var(--primary);
@@ -288,4 +284,8 @@
 
 .search-view-content .btn-group {
   margin: 16px;
+}
+
+.clear-btn-none {
+  display: none;
 }
