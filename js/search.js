@@ -57,7 +57,10 @@ searchBtn.addEventListener('click', () => {
   }
 });
 
-// ================ Submit search when press "Enter" ================== 1:52
+// ================ Submit search when press "Enter" key ==================
+searchField.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && searchField.value.trim()) searchBtn.click();
+});
 
 // ========================= Search history ===========================
 let searchHistory = { items: [] };
